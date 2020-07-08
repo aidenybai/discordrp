@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>DiscordRP</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body class="bg" id="bg">
+    <header id="titlebar">
+      <div id="drag-region">
+        <div id="window-controls">
+          <div class="button" id="min-button">
+            <span>&#xE921;</span>
+          </div>
+          <div class="button" id="close-button">
+            <span>&#xE8BB;</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="main">
+      <h1 class="display-4">DiscordRP</h1>
+      <p style="color: rgba(255, 255, 255, 0.747) !important;">GUI-based Discord Rich Presence by <a href="https://aiden.codes">Aiden</a></p>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="State"
+          aria-label="State"
+          id="state"
+          max-length="256"
+          required
+        />
+        <div class="input-group-append">
+          <span class="input-group-text">State</span>
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Details"
+          aria-label="Details"
+          id="details"
+          max-length="256"
+          required
+        />
+        <div class="input-group-append">
+          <span class="input-group-text">Details</span>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Client ID (optional)"
+          aria-label="Client ID"
+          id="clientid"
+          max-length="256"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text">ID</span>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Large Image Key (optional)"
+          aria-label="Large Image Key (optional)"
+          id="large"
+          max-length="256"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text">Large</span>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Small Image Key (optional)"
+          aria-label="Small Image Key (optional)"
+          id="small"
+          max-length="256"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text">Small</span>
+        </div>
+      </div>
+
+      <div class="md-checkbox">
+        <input id="party" type="checkbox">
+        <label class="damp" for="party">Spoofed Party</label>
+      </div>
+
+      <button class="btn btn-primary" id="start">
+        Start
+      </button>
+      <button class="btn btn-primary" id="stop" disabled>
+        Stop
+      </button>
+      <p id="status"></p>
+    </div>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.slim.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/68cfe284e4.js" crossorigin="anonymous"></script>
+    <script>
+      require('./js/renderer.js');
+    </script>
+  </body>
+</html>

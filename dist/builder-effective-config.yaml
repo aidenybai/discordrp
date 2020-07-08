@@ -1,0 +1,8 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.discordrp.app
+artifactName: 'DiscordRP v${version}.${ext}'
+productName: DiscordRP
+icon: build/icon.png
+electronVersion: 7.1.9

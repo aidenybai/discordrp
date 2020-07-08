@@ -1,0 +1,35 @@
+{
+  "name": "discordrp",
+  "productName": "DiscordRP",
+  "version": "0.0.2",
+  "description": "Electron Discord Rich Presense",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-builder build -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.discordrp.app",
+    "artifactName": "DiscordRP v${version}.${ext}",
+    "productName": "DiscordRP",
+    "icon": "build/icon.png"
+  },
+  "keywords": [
+    "electron",
+    "discord",
+    "rp"
+  ],
+  "author": "Aiden Bai",
+  "license": "ISC",
+  "dependencies": {
+    "discord-rich-presence": "^0.0.8",
+    "electron-store": "^5.1.0",
+    "electron-window-state": "^5.0.3"
+  },
+  "devDependencies": {
+    "electron": "^7.1.9",
+    "electron-builder": "^22.2.0",
+    "prettier": "^1.19.1"
+  }
+}
