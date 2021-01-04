@@ -1,7 +1,7 @@
 {
   "name": "discordrp",
   "productName": "DiscordRP",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Electron Discord Rich Presense",
   "main": "main.js",
   "scripts": {

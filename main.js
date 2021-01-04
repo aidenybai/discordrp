@@ -61,7 +61,7 @@ ipcMain.on('run', (event, args) => {
       instance: true,
       partyId: 'discordrp_party',
       partySize: 1,
-      partyMax: 1,
+      partyMax: 69,
       matchSecret: 'rpone',
       joinSecret: 'rptwo',
       spectateSecret: 'rpthree',
