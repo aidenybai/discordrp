@@ -22,8 +22,8 @@ document.querySelector('#start').onclick = () => {
     document.querySelector('#state').value,
     document.querySelector('#details').value,
     document.querySelector('#party').checked,
-    document.querySelector('#clientid').value || '',
-    document.querySelector('#large').value || '',
+    document.querySelector('#clientid').value || '458475714556067842',
+    document.querySelector('#large').value || 'whlogo',
     document.querySelector('#small').value || ''
   );
 

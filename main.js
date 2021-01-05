@@ -12,13 +12,13 @@ function createWindow() {
 
   mainWindow = new BrowserWindow({
     width: 500,
-    height: 550,
+    height: 450,
     x: mainWindowState.x,
     y: mainWindowState.y,
     maximizable: false,
     frame: false,
     transparent: false,
-    backgroundColor: '#111313',
+    backgroundColor: '#1c1b29',
     resizable: false,
     icon: path.join(__dirname, 'build/icon.png'),
     webPreferences: {
@@ -61,11 +61,11 @@ ipcMain.on('run', (event, args) => {
       instance: true,
       partyId: 'discordrp_party',
       partySize: 1,
-      partyMax: 69,
-      matchSecret: 'rpone',
-      joinSecret: 'rptwo',
-      spectateSecret: 'rpthree',
-      largeImageKey: args.large || 'discordlarge',
+      partyMax: 3,
+      matchSecret: 'mmm1',
+      joinSecret: 'mmm2',
+      spectateSecret: 'mmm3',
+      largeImageKey: args.large || 'logo',
       smallImageKey: args.small || 'discordrp',
     });
   } else {
@@ -74,12 +74,12 @@ ipcMain.on('run', (event, args) => {
       details: args.details,
       startTimestamp: Date.now(),
       instance: true,
-      largeImageKey: args.large || 'discordlarge',
+      largeImageKey: args.large || 'logo',
       smallImageKey: args.small || 'discordrp',
     });
   }
 
-  console.log('rp');
+  console.log(client);
 
   event.reply('run', 'done');
 });

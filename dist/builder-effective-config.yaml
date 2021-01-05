@@ -1,8 +1,8 @@
 directories:
   output: dist
   buildResources: build
-appId: com.discordrp.app
-artifactName: 'DiscordRP v${version}.${ext}'
-productName: DiscordRP
+appId: com.waifuhunter.app
+artifactName: 'Waifu Hunter v${version}.${ext}'
+productName: Waifu Hunter
 icon: build/icon.png
 electronVersion: 7.1.9
