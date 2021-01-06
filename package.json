@@ -8,13 +8,27 @@
     "start": "electron .",
     "release": "electron-builder build -mwl",
     "package-win": "electron-builder build -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo success"
   },
   "build": {
     "appId": "com.waifuhunter.app",
     "artifactName": "Waifu Hunter v${version}.${ext}",
     "productName": "Waifu Hunter",
-    "icon": "build/icon.png"
+    "icon": "build/icon.png",
+    "dmg": {
+      "contents": [
+        {
+          "x": 500,
+          "y": 450
+        },
+        {
+          "x": 500,
+          "y": 450,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    }
   },
   "keywords": [
     "electron",
