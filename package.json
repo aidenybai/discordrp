@@ -6,6 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "release": "electron-builder build -mwl",
     "package-win": "electron-builder build -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
